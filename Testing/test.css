@@ -1,0 +1,28 @@
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 300px;
+    height: 300px;
+    
+}
+.purple{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+.red{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+.blue{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
