@@ -5,20 +5,45 @@ const contact_text = document.querySelector('.contact_text')
 const contact_form = document.querySelector('.contact_form')
 const span = document.querySelector('.span')
 
+// Social media icons 
 const github =document.getElementById('github')
-const behance =document.getElementById('behance')
 const dribbble =document.getElementById('dribbble')
 const instagram =document.getElementById('instagram')
 const linkedin =document.getElementById('linkedin')
 const youtube =document.getElementById('youtube')
 
 linkedin.addEventListener('mouseover', ()=>{
-    linkedin.style.transition='3s ease'
 linkedin.src='assets/Social media icons_linkedin_hover.png'
 })
 linkedin.addEventListener('mouseleave', ()=>{
     linkedin.src='assets/Social media icons_linkedin.png'
 })
+
+dribbble_effect =dribbble.addEventListener('mouseover', ()=>{
+    dribbble.src='assets/Social media icons_dribbble_hover.png'
+    })
+    dribbble.addEventListener('mouseleave', ()=>{
+        dribbble.src='assets/Social media icons_dribbble.png'
+    })
+instagram.addEventListener('mouseover', ()=>{
+    instagram.src='assets/Social media icons_instagram_hover.png'
+    })
+    instagram.addEventListener('mouseleave', ()=>{
+        instagram.src='assets/Social media icons_instagram.png'
+    })
+youtube.addEventListener('mouseover', ()=>{
+    youtube.src='assets/Social media icons_youtube_hover.png'
+    })
+    youtube.addEventListener('mouseleave', ()=>{
+        youtube.src='assets/Social media icons_youtube.png'
+    })
+github.addEventListener('mouseover', ()=>{
+    github.src='assets/Social media icons_github_hover.png'
+    })
+    github.addEventListener('mouseleave', ()=>{
+        github.src='assets/Social media icons_github.png'
+    })
+
 
 let kamen = 1
 let drvo = 0
@@ -46,8 +71,6 @@ picture.addEventListener('click', function() {
     }
   });
 
-
-
 let count = 0
 const cyan = [1, 5,  9, ]
 const magenta = [2, 6, 10, ]
@@ -57,16 +80,12 @@ pictureBackground.addEventListener('mouseover',function(){
 count ++
 console.log(count)
 
-
 if(cyan.includes(count)){
 pictureBackground.style.background="#7FCFD5"
 allH2Elements.forEach(function (h2Element) {
     h2Element.style.transition ='0.5s ease'
     h2Element.style.color = '#7FCFD5';
     span.style.bottom ="18px"
-    // span.style.color='#7FCFD5'
-
-
   });
 } 
 
@@ -76,8 +95,6 @@ else if(magenta.includes(count)){
         h2Element.style.transition ='0.5s ease'
         h2Element.style.color = '#C36AAA';
         span.style.bottom ="36px"
-        // span.style.color='#C36AAA'
-
       });
 }
 
@@ -87,11 +104,6 @@ else if(yellow.includes(count)){
         h2Element.style.transition ='0.5s ease'
         h2Element.style.color = '#F4943D';
         span.style.bottom = `${(36+18)}px`
-        // span.style.color='#F4943D'
-        
-
-        
-
       });
     }
 
@@ -101,8 +113,6 @@ else if(key.includes(count)){
         h2Element.style.transition ='0.5s ease'
         h2Element.style.color = '#000000';
         span.style.bottom =""
-        // span.style.color='#000000'
-
       });
     }
 
