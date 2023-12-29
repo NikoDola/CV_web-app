@@ -1,9 +1,34 @@
+/** @type {HTMLCanvasElement} */
 const pictureBackground = document.getElementById('picture_background');
 const allH2Elements = document.querySelectorAll('h2')
+const photoshop = document.querySelector('.photoshop');
 const picture = document.querySelector('#picture');
 const contact_text = document.querySelector('.contact_text')
 const contact_form = document.querySelector('.contact_form')
 const span = document.querySelector('.span')
+const languages = document.querySelector('.languages')
+const canvas = document.getElementById('canvas')
+const ctx = canvas.getContext('2D')
+canvas.width = 275
+canvas.height = 100
+
+
+
+
+const game = document.querySelector('.game');
+
+gameToggle = false
+
+game.addEventListener('click', () => {
+    gameToggle = !gameToggle
+    if(gameToggle){
+        canvas.style.display = 'block';
+    }
+    else{
+        canvas.style.display = ''
+    }
+});
+
 
 // Social media icons 
 const github =document.getElementById('github')
@@ -45,12 +70,12 @@ github.addEventListener('mouseover', ()=>{
     })
 
 
-let kamen = 1
+let togggleContact = false
 let drvo = 0
 
 contact_text.addEventListener('click', function(){
-    kamen ++
-    if(kamen % 2 === 0){
+    togggleContact = !togggleContact
+    if(togggleContact){
         contact_form.style.transition ='0.5s ease'
         contact_form.style.display='block'
     }
@@ -59,7 +84,7 @@ contact_text.addEventListener('click', function(){
     }
 })
 
-picture.addEventListener('click', function() {
+photoshop.addEventListener('click', function() {
     
     drvo ++
     console.log(`count is ${count}`)
@@ -83,7 +108,7 @@ console.log(count)
 if(cyan.includes(count)){
 pictureBackground.style.background="#7FCFD5"
 allH2Elements.forEach(function (h2Element) {
-    h2Element.style.transition ='0.5s ease'
+    h2Element.style.transition ='color 0.5s ease'
     h2Element.style.color = '#7FCFD5';
     span.style.bottom ="18px"
   });
@@ -92,7 +117,7 @@ allH2Elements.forEach(function (h2Element) {
 else if(magenta.includes(count)){
     pictureBackground.style.background="#C36AAA"
     allH2Elements.forEach(function (h2Element) {
-        h2Element.style.transition ='0.5s ease'
+        h2Element.style.transition ='color 0.5s ease'
         h2Element.style.color = '#C36AAA';
         span.style.bottom ="36px"
       });
@@ -101,16 +126,16 @@ else if(magenta.includes(count)){
 else if(yellow.includes(count)){
     pictureBackground.style.background="#F4943D"
     allH2Elements.forEach(function (h2Element) {
-        h2Element.style.transition ='0.5s ease'
+        h2Element.style.transition ='color 0.5s ease'
         h2Element.style.color = '#F4943D';
-        span.style.bottom = `${(36+18)}px`
+        span.style.bottom = `${(36+17)}px`
       });
     }
 
 else if(key.includes(count)){
     pictureBackground.style.background="#000000"
     allH2Elements.forEach(function (h2Element) {
-        h2Element.style.transition ='0.5s ease'
+        h2Element.style.transition ='color 0.5s ease'
         h2Element.style.color = '#000000';
         span.style.bottom =""
       });
@@ -123,6 +148,8 @@ else if(key.includes(count)){
         count = 1
     }
 })
+
+
 
 
 

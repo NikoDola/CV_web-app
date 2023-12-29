@@ -3,15 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="test.css">
+    <title>Toggle Example</title>
 </head>
-<body> 
-    <div class="main">
-        <div class="blue"></div>
-        <div class="red"></div>
-        <div class="purple"></div>
-    </div>
-    <script src="test.js"></script>
+<body>
+    <button id="toggleButton">Toggle</button>
+    <div id="toggleContent">This content can be toggled</div>
+
+    <script>
+        // Get references to the button and content elements
+        const toggleButton = document.getElementById('toggleButton');
+        const toggleContent = document.getElementById('toggleContent');
+
+        // Initialize the toggle state
+        let isToggled = false;
+
+        // Add a click event listener to the button
+        toggleButton.addEventListener('click', () => {
+            // Toggle the state
+            isToggled = !isToggled; 
+
+            // Update the content visibility based on the toggle state
+            if (isToggled) {
+                toggleContent.style.display = 'none';
+            } else {
+                toggleContent.style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>

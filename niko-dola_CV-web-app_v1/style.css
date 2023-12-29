@@ -9,6 +9,20 @@ h1 {
     line-height: 28px;
 }
 
+.game{
+    cursor: pointer;
+}
+
+.game:hover{
+    color: blue;
+}
+#canvas{
+    display: none;
+    position: absolute;
+    bottom: 55px;
+    left: 40px;
+}
+
 #message{
     height: 30px;
     margin-top: 5px;
@@ -17,6 +31,11 @@ h1 {
 
 .contact_text{
     cursor: pointer;
+}
+.contact_text:hover{
+    
+    color:blue;
+    text-decoration: underline;
 }
 
 #email, #message{
@@ -30,10 +49,23 @@ h1 {
     display: none;
 }
 
+.phone{
+    cursor: pointer;
+}
+
+.phone:hover{
+    color: blue;
+}
+
 h2 {
     font-size: 24px !important;
     font-family: 'Poppins', sans-serif;
     line-height: 28px;
+}
+
+.languages:hover{
+    transform: scaleX(-1);
+    transition: 0s;
 }
 
 p, ul {
@@ -78,7 +110,7 @@ p, ul {
     top: -8.5px;
     left: -1.6px;
     position: relative;
-    cursor: pointer;
+    
 }
 
 .picture_background {
@@ -107,6 +139,7 @@ p, ul {
     overflow: hidden;
     top:-60px;
     transform: 0.4s ease;
+    right: 17px;
 }
 
 .span-holder span{
@@ -115,9 +148,7 @@ p, ul {
     transition: 0.4s ease;
 }
 
-.span-holder span:hover{
-    bottom: 18px;
-}
+
 
 .name {
     padding: 20px 40px 40px 40px;
@@ -142,16 +173,16 @@ p, ul {
 
 #youtube, #github, #linkedin, #dribbble, #instagram, #behance {
     cursor: pointer;
-    height: 30px;
+    height: 20px;
 }
 
 .social_links{
     display: flex;
     position: relative;
-    top: 110px;
+    top: 80px;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 15px;
     
 }
 
@@ -173,8 +204,8 @@ p, ul {
     background: #E8E8E8;
     position: absolute;
     left: 50%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     transform: translate(-50%);
 }
 
@@ -182,5 +213,7 @@ p, ul {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #606060;
+    background-color: white;
 }
+
+

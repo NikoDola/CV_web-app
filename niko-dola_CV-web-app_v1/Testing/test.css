@@ -1,28 +1,18 @@
-.main{
+.phone{
     position: absolute;
+    height: 350px;
+    width: 170px;
+    background: gray;
+    z-index: 100;
+    margin-left: auto;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    width: 300px;
-    height: 300px;
-    
+    left: 60%;
+    border-radius: 20px;
+   
 }
-.purple{
-    height: 50px;
-    width: 50px;
-    background-color: black;
-}
-.red{
-    height: 50px;
-    width: 50px;
-    background-color: black;
-}
-.blue{
-    height: 50px;
-    width: 50px;
-    background-color: black;
+
+.a4{
+    width: 594px;
+    height: 842px;
+    background-color: gray;
 }
