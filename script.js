@@ -106,7 +106,7 @@ photoshop.addEventListener('click', function() {
 //         picture.src='assets/Profile-picture.png'
 //         uranium = 0
 //     }
-  });
+//   });
 
 let count = 0
 const cyan = [1, 5,  9, ]
