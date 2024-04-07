@@ -9,9 +9,7 @@ h1 {
     line-height: 28px;
 }
 
-.game{
-    cursor: pointer;
-}
+
 
 .game:hover{
     color: blue;
@@ -29,12 +27,10 @@ h1 {
     margin-bottom: 5px;
 }
 
-.contact_text{
+#contact_text{
     cursor: pointer;
 }
-.contact_text:hover{
-    
-    color:blue;
+#contact_text:hover{
     text-decoration: underline;
 }
 
@@ -49,7 +45,7 @@ h1 {
     display: none;
 }
 
-.phone{
+#phone{
     cursor: pointer;
 }
 
@@ -63,7 +59,7 @@ h2 {
     line-height: 28px;
 }
 
-.languages:hover{
+#languages:hover{
     transform: scaleX(-1);
     transition: 0s;
 }
@@ -87,12 +83,14 @@ p, ul {
     color: red;
 }
 
-#main_text {
+.main_text {
     margin-bottom: 10px;
+    transform: 0.3s ease;
 }
 
-#body_text {
+.body_text {
     margin-top: 10px;
+    transition: 0.3s ease;
 }
 
 .info {

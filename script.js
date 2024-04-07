@@ -3,7 +3,7 @@ const pictureBackground = document.getElementById('picture_background');
 const allH2Elements = document.querySelectorAll('h2')
 const photoshop = document.querySelector('.photoshop');
 const picture = document.querySelector('#picture');
-const contact_text = document.querySelector('.contact_text')
+const contact_text = document.querySelector('.main_text')
 const contact_form = document.querySelector('.contact_form')
 const span = document.querySelector('.span')
 const languages = document.querySelector('.languages')
@@ -15,19 +15,7 @@ canvas.height = 100
 
 
 
-const game = document.querySelector('.game');
 
-gameToggle = false
-
-game.addEventListener('click', () => {
-    gameToggle = !gameToggle
-    if(gameToggle){
-        canvas.style.display = 'block';
-    }
-    else{
-        canvas.style.display = ''
-    }
-});
 
 
 // Social media icons 
