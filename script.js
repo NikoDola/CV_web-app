@@ -1,7 +1,8 @@
 /** @type {HTMLCanvasElement} */
 const pictureBackground = document.getElementById('picture_background');
 const allH2Elements = document.querySelectorAll('h2')
-const photoshop = document.querySelector('.photoshop');
+const photoshop = document.querySelector('#photoshop');
+// const illustrator = document.querySelector('#illustrator');
 const picture = document.querySelector('#picture');
 const contact_text = document.querySelector('.main_text')
 const contact_form = document.querySelector('.contact_form')
@@ -74,14 +75,37 @@ contact_text.addEventListener('click', function(){
 
 photoshop.addEventListener('click', function() {
     
-    drvo ++
-    console.log(`count is ${count}`)
+    drvo ++ 
+    console.log(`drvo ${drvo}`)
+    
     if (drvo === 1) {
     picture.src="assets/sun-glasess2.png"
     }
     if (drvo === 2){
     picture.src="assets/sun-glasess-gold-chain.png"
+        
     }
+    else if (drvo === 3){
+        picture.src='assets/Profile-picture.png'
+        drvo = 0
+    }
+    
+  });
+
+//   let uranium = 0
+
+//   illustrator.addEventListener('click', function() {
+    
+//     uranium ++ 
+//     console.log(`uranium ${uranium}`)
+    
+//     if (uranium === 1) {
+//     picture.src="assets/illustration.png"
+//     }
+//     if (uranium === 2){
+//         picture.src='assets/Profile-picture.png'
+//         uranium = 0
+//     }
   });
 
 let count = 0
